@@ -112,11 +112,11 @@ swtpm_CFLAGS = \
 	-I$(top_srcdir)/include \
 	-I$(top_srcdir)/include/swtpm \
 	-I$(top_srcdir)/src/utils \
-	-I../../../libtpms/sgx-libtpms/Include \
-	-I../../../libtpms/sgx-libtpms/App/ \
+	-I../../../sgx-libtpms/sgx-libtpms/Include \
+	-I../../../sgx-libtpms/sgx-libtpms/App/ \
 	-I/opt/intel/sgxsdk/include/ \
-	-I../../../libtpms/include/libtpms \
-	-I../../../libtpms/sgx-libtpms/Include \
+	-I../../../sgx-libtpms/include/libtpms \
+	-I../../../sgx-libtpms/sgx-libtpms/Include \
 	$(MY_CFLAGS) \
 	$(HARDENING_CFLAGS) \
 	$(GLIB_CFLAGS) \
@@ -126,7 +126,7 @@ swtpm_CFLAGS = \
 
 
 swtpm_LDFLAGS = \
-	../../../libtpms/sgx-libtpms/App/Enclave_u.o \
+	../../../sgx-libtpms/sgx-libtpms/App/Enclave_u.o \
 	$(MY_LDFLAGS) \
 	$(HARDENING_LDFLAGS) \
 	-L/usr/lib/x86_64-linux-gnu  -lsgx_urts -lpthread  -lseccomp -lcrypto -L/opt/intel/sgxsdk/lib64 -lsgx_uprotected_fs
