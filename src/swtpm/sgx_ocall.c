@@ -43,7 +43,7 @@ TPM_RESULT ocall_mainloop_cb_get_locality(TPM_MODIFIER_INDICATOR *loc, uint32_t 
     return mainloop_cb_get_locality(loc, tpmnum);
 }
 
-#define ENCLAVE_FILENAME "/home/vm-admin/ws/sgx-libtpms/sgx-libtpms/libenclave_tpms.signed.so"
+#define ENCLAVE_FILENAME "/usr/local/lib/libenclave_tpms.signed.so"
 #define TOKEN_FILENAME   "enclave.token"
 #define MAX_PATH FILENAME_MAX
 #define MAX_BUF_LEN 100
